@@ -5,19 +5,19 @@ const contactInfo = [
   {
     icon: FaPhone,
     title: "اتصل بنا",
-    detail: "+20 123 456 7890",
+    detail: "201007020762+ , 966583281913+",
     color: "from-blue-500 to-cyan-500"
   },
   {
     icon: FaEnvelope,
     title: "البريد الإلكتروني",
-    detail: "info@tourismcrm.com",
+    detail: "info@azzka.net",
     color: "from-purple-500 to-pink-500"
   },
   {
     icon: FaMapMarkerAlt,
     title: "العنوان",
-    detail: "القاهرة، مصر",
+    detail: "مصر , القاهرة , مصر الجديدة  , عمارات العبور 19أ",
     color: "from-orange-500 to-red-500"
   }
 ];
@@ -36,11 +36,11 @@ const ContactUs = () => {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
             تواصل معنا
-            <span className="block text-[#fe6813] mt-2">نحن هنا لمساعدتك</span>
+            <span className="block text-[#fe6813] mt-2">كن أول من يمتلك المستقبل</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            لديك سؤال أو استفسار؟ فريقنا جاهز للرد على جميع استفساراتك
-          </p>
+انضم لنخبة العملاء الذين يثقون في حلول ماستر فيجن منذ 2007
+ سجل واطلب عرضاً توضيحياً لمنظومة <strong>"أذكى"</strong> الآن          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -58,6 +58,32 @@ const ContactUs = () => {
                   name="name"
                   className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#fe6813] focus:outline-none transition-colors duration-200 text-gray-900"
                   placeholder="أدخل اسمك الكامل"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="name" className="block text-gray-900 font-bold mb-2 text-lg">
+                  اسم الشركة
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#fe6813] focus:outline-none transition-colors duration-200 text-gray-900"
+                  placeholder="أدخل اسم الشركة"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="name" className="block text-gray-900 font-bold mb-2 text-lg">
+                  الوظيفة
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#fe6813] focus:outline-none transition-colors duration-200 text-gray-900"
+                  placeholder="أدخل الوظيفة"
                   required
                 />
               </div>
@@ -114,7 +140,7 @@ const ContactUs = () => {
                 className="w-full bg-gradient-to-r from-[#500d75] to-[#6b1a99] text-white px-8 py-5 rounded-xl font-bold text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
               >
                 <FaPaperPlane />
-                <span>إرسال الرسالة</span>
+                <span>سجل الان</span>
               </button>
             </form>
           </div>
@@ -124,12 +150,12 @@ const ContactUs = () => {
             {/* Intro Text */}
             <div className="bg-gradient-to-br from-[#500d75] to-[#6b1a99] rounded-3xl p-8 text-white">
               <h3 className="text-3xl font-bold mb-4">
-                نسعد بسماع رأيك
+               اشترك الآن وابدأ مستقبل الإدارة الأذكى
               </h3>
-              <p className="text-lg text-gray-100 leading-relaxed">
+              {/* <p className="text-lg text-gray-100 leading-relaxed">
                 فريقنا المتخصص جاهز لمساعدتك والإجابة على جميع استفساراتك.
                 نرد على جميع الرسائل خلال 24 ساعة.
-              </p>
+              </p> */}
             </div>
 
             {/* Contact Info Cards */}
@@ -149,8 +175,9 @@ const ContactUs = () => {
                         <h4 className="text-lg font-bold text-gray-900 mb-1">
                           {info.title}
                         </h4>
-                        <p className="text-gray-600 text-base">
-                          {info.detail}
+                        <p className="text-gray-600 text-base" >
+                          {/* {info.detail} */}
+                          <a href={`mailto:${info.detail}`} className="text-[#fe6813] hover:underline">{info.detail}</a>
                         </p>
                       </div>
                     </div>

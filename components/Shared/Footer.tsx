@@ -20,8 +20,7 @@ const Footer = () => {
                             className="object-contain"
                         />
                         <p className="text-gray-300 text-sm leading-relaxed">
-                            نحن نقدم أفضل الحلول التقنية لمساعدتك على تحقيق أهدافك بكفاءة واحترافية.
-                        </p>
+نظام "أذكى".. الاسم الذي يُلخص الأداء. عندما تجتمع الخبرة مع الابتكار، ينتج نظام أذكى الجيل القادم من الحلول الرقمية المتكاملة أحدث إبداعات شركة ماستر فيجن للحلول المتكاملة. نضع بين أيديكم خلاصة ريادتنا التقنية منذ عام 2007.                        </p>
                     </div>
 
                     {/* روابط سريعة */}
@@ -85,18 +84,18 @@ const Footer = () => {
                             <li className="flex items-center gap-2 text-gray-300">
                                 <span>📧</span>
                                 <a href="mailto:info@azzka.com" className="hover:text-[#fe6813] transition">
-                                    info@azzka.com
+                                    info@azzka.app
                                 </a>
                             </li>
                             <li className="flex items-center gap-2 text-gray-300">
                                 <span>📞</span>
                                 <a href="tel:+201234567890" className="hover:text-[#fe6813] transition">
-                                    +20 123 456 7890
+                                   201007020762+ , 966583281913+
                                 </a>
                             </li>
                             <li className="flex items-center gap-2 text-gray-300">
                                 <span>📍</span>
-                                <span>القاهرة، مصر</span>
+                                <span>19 أ عمارات العبور، صلاح سالم، القاهرة، مصر </span>
                             </li>
                         </ul>
 
@@ -105,15 +104,7 @@ const Footer = () => {
                             <Link href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#fe6813] transition">
                                 <span className="text-xl">f</span>
                             </Link>
-                            <Link href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#fe6813] transition">
-                                <span className="text-xl">𝕏</span>
-                            </Link>
-                            <Link href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#fe6813] transition">
-                                <span className="text-xl">in</span>
-                            </Link>
-                            <Link href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#fe6813] transition">
-                                <span className="text-xl">IG</span>
-                            </Link>
+                            
                         </div>
                     </div>
                 </div>
@@ -122,16 +113,9 @@ const Footer = () => {
             {/* الحقوق */}
             <div className="border-t border-white/10">
                 <div className="max-w-7xl mx-auto px-5 py-6">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
-                        <p>© 2025 اذكي. جميع الحقوق محفوظة.</p>
-                        <div className="flex gap-6">
-                            <Link href="#" className="hover:text-[#fe6813] transition">
-                                سياسة الخصوصية
-                            </Link>
-                            <Link href="#" className="hover:text-[#fe6813] transition">
-                                الشروط والأحكام
-                            </Link>
-                        </div>
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-gray-300">
+                        <p>© 2007 - 2025 جميع الحقوق محفوظة لشركة <a href="https://www.mv-is.com/" target="_blank" className="hover:text-[#fe6813] transition">Master Vision Integrated Solutions</a></p>
+                        
                     </div>
                 </div>
             </div>
