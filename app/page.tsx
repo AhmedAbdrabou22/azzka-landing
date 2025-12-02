@@ -11,14 +11,33 @@ import AboutMasterVision from "../components/Home/Partner";
 export default function Home() {
   return (
     <div className="">
-      <Hero />
-      <About />
-      <WhyChooseUs/>
-      <ModulesSection />
-      {/* <PartnersSection/> */}
-      <AboutMasterVision/>
-        <Faqs/>
-        <ContactUs/>
+      <div id="hero">
+        <Hero />
+      </div>
+
+      <div id="about">
+        <About />
+      </div>
+
+      <div id="why">
+        <WhyChooseUs />
+      </div>
+
+      <div id="modules">
+        <ModulesSection />
+      </div>
+
+      <div id="vision">
+        <AboutMasterVision />
+      </div>
+
+      <div id="faqs">
+        <Faqs />
+      </div>
+
+      <div id="contact">
+        <ContactUs />
+      </div>
     </div>
   );
 }
