@@ -55,23 +55,26 @@ const Footer = () => {
                         <h3 className="text-lg font-bold mb-4 text-[#fe6813]">الخدمات</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="#" className="text-gray-300 hover:text-[#fe6813] transition">
-                                    التطوير
+                                <Link href="#modules" className="text-gray-300 hover:text-[#fe6813] transition">
+                                    نظام الحسابات العامة
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="text-gray-300 hover:text-[#fe6813] transition">
-                                    التصميم
+                                <Link href="#modules" className="text-gray-300 hover:text-[#fe6813] transition">
+                                    ادارة السياحة الدينية
+
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="text-gray-300 hover:text-[#fe6813] transition">
-                                    الاستشارات
+                                <Link href="#modules" className="text-gray-300 hover:text-[#fe6813] transition">
+                                    ادارة السياحة الداخلية الخارجية
+
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="text-gray-300 hover:text-[#fe6813] transition">
-                                    الدعم الفني
+                                <Link href="#modules" className="text-gray-300 hover:text-[#fe6813] transition">
+                                   ادارة علاقات العملاء CRM
+
                                 </Link>
                             </li>
                         </ul>
