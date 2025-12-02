@@ -5,7 +5,18 @@ import { FaMoneyBillWave, FaUsers, FaPlane, FaHandshake, FaFolder, FaWarehouse, 
 const modules = [
     {
         id: 1,
-        name: "العمليات السياحية",
+        name: "نظام الحسابات العامة",
+        icon: FaMoneyBillWave,
+        description: `نظام مالي متكامل يدير كل تفاصيل حسابات شركتك بدقة عالية ليمنحك رؤية واضحة وتحكّم كامل في أرباحك وتدفقاتك المالية.`,
+        features: ["دليل وشجرة الحسابات", "دفتر الأستاذ وقيود اليومية", "المصروفات ","ومراكز التكلفة","إدارة الأصول"," التقارير المالية"],
+        color: "from-orange-500 to-red-500",
+        bgColor: "bg-orange-500/10",
+        borderColor: "border-orange-500/20",
+        hoverColor: "hover:border-orange-500/40"
+    },
+    {
+        id: 2,
+        name: "ادارة السياحة الدينية",
         icon: FaPlane,
         description: "إدارة شاملة للرحلات والحجوزات والباقات السياحية",
         features: ["حجز الرحلات", "إدارة الفنادق", "تنظيم الجولات"],
@@ -15,8 +26,8 @@ const modules = [
         hoverColor: "hover:border-blue-500/40"
     },
     {
-        id: 2,
-        name: "إدارة العملاء (CRM)",
+        id: 3,
+        name: "ادارة السياحة الداخلية",
         icon: FaHandshake,
         description: "نظام متكامل لإدارة علاقات العملاء وتتبع المبيعات",
         features: ["قاعدة بيانات العملاء", "تتبع الفرص", "إدارة التواصل"],
@@ -26,8 +37,8 @@ const modules = [
         hoverColor: "hover:border-green-500/40"
     },
     {
-        id: 3,
-        name: "الموارد البشرية (HRM)",
+        id: 4,
+        name: "ادارة السياحة الخارجية",
         icon: FaUsers,
         description: "إدارة الموظفين والرواتب والحضور والإجازات",
         features: ["إدارة الموظفين", "الرواتب", "الحضور والانصراف"],
@@ -36,20 +47,10 @@ const modules = [
         borderColor: "border-purple-500/20",
         hoverColor: "hover:border-purple-500/40"
     },
-    {
-        id: 4,
-        name: "الحسابات",
-        icon: FaMoneyBillWave,
-        description: "نظام محاسبي شامل لإدارة الفواتير والمدفوعات والتقارير",
-        features: ["الفواتير", "القيود المحاسبية", "التقارير المالية"],
-        color: "from-orange-500 to-red-500",
-        bgColor: "bg-orange-500/10",
-        borderColor: "border-orange-500/20",
-        hoverColor: "hover:border-orange-500/40"
-    },
+    
     {
         id: 5,
-        name: "المخازن",
+        name: "ادارة علاقات العملاء CRM",
         icon: FaWarehouse,
         description: "إدارة المخزون والمشتريات وحركة البضائع",
         features: ["تتبع المخزون", "إدارة المشتريات", "تقارير المخزون"],
@@ -60,6 +61,39 @@ const modules = [
     },
     {
         id: 6,
+        name: "ادارة الموارد البشرية HRM",
+        icon: FaFolder,
+        description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
+        features: ["تخزين آمن", "البحث السريع", "التصنيف الذكي"],
+        color: "from-indigo-500 to-violet-500",
+        bgColor: "bg-indigo-500/10",
+        borderColor: "border-indigo-500/20",
+        hoverColor: "hover:border-indigo-500/40"
+    },
+    {
+        id: 7,
+        name: "ادارة المخازن",
+        icon: FaFolder,
+        description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
+        features: ["تخزين آمن", "البحث السريع", "التصنيف الذكي"],
+        color: "from-indigo-500 to-violet-500",
+        bgColor: "bg-indigo-500/10",
+        borderColor: "border-indigo-500/20",
+        hoverColor: "hover:border-indigo-500/40"
+    },
+    {
+        id: 8,
+        name: "ادارة المهام",
+        icon: FaFolder,
+        description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
+        features: ["تخزين آمن", "البحث السريع", "التصنيف الذكي"],
+        color: "from-indigo-500 to-violet-500",
+        bgColor: "bg-indigo-500/10",
+        borderColor: "border-indigo-500/20",
+        hoverColor: "hover:border-indigo-500/40"
+    },
+    {
+        id: 9,
         name: "الأرشيف الإلكتروني",
         icon: FaFolder,
         description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
@@ -68,7 +102,8 @@ const modules = [
         bgColor: "bg-indigo-500/10",
         borderColor: "border-indigo-500/20",
         hoverColor: "hover:border-indigo-500/40"
-    }
+    },
+
 ];
 
 export default function ModulesSection() {
@@ -94,7 +129,7 @@ export default function ModulesSection() {
                         return (
                             <div
                                 key={module.id}
-                                className={`group relative ${module.bgColor} backdrop-blur-sm rounded-3xl p-8 border-2 ${module.borderColor} ${module.hoverColor} transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
+                                className={`group relative ${module.bgColor} backdrop-blur-sm rounded-3xl p-4 border-2 ${module.borderColor} ${module.hoverColor} transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
                             >
                                 {/* Icon with Gradient Background */}
                                 <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${module.color} mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -122,13 +157,13 @@ export default function ModulesSection() {
                                 </ul>
 
                                 {/* Link Button */}
-                                <Link 
+                                {/* <Link 
                                     href="#" 
                                     className={`inline-flex items-center gap-2 text-gray-900 font-bold group-hover:gap-4 transition-all duration-300`}
                                 >
                                     <span>اكتشف المزيد</span>
                                     <FaArrowLeft className="text-sm" />
-                                </Link>
+                                </Link> */}
 
                                 {/* Decorative Gradient */}
                                 <div className={`absolute top-0 left-0 w-full h-1 rounded-t-3xl bg-gradient-to-r ${module.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
