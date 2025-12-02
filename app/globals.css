@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes blob {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, -30px) scale(1.1); }
+}
+
+.animate-blob {
+    animation: blob 8s infinite ease-in-out;
+}
+
+.animation-delay-2000 {
+    animation-delay: 4s;
+}
+
+.logo-white {
+    filter: invert(1) brightness(2);
+}
+
+/* Tailwind Base / Components / Utilities */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* أي CSS إضافي بعد Tailwind */
+@keyframes blob {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(30px, -30px) scale(1.1); }
+}
+
+.animate-blob {
+  animation: blob 8s infinite ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 4s;
+}
+
+.logo-white {
+  filter: invert(1) brightness(2);
+} 
