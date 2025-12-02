@@ -175,10 +175,19 @@ const ContactUs = () => {
                         <h4 className="text-lg font-bold text-gray-900 mb-1">
                           {info.title}
                         </h4>
-                        <p className="text-gray-600 text-base" >
-                          {/* {info.detail} */}
-                          <a href={`mailto:${info.detail}`} className="text-[#fe6813] hover:underline">{info.detail}</a>
-                        </p>
+                       <p className="text-gray-600 text-base">
+  {info.title === "البريد الإلكتروني" ? (
+    <a 
+      href={`mailto:${info.detail}`} 
+      className="text-[#fe6813] hover:underline"
+    >
+      {info.detail}
+    </a>
+  ) : (
+    <span>{info.detail}</span>
+  )}
+</p>
+
                       </div>
                     </div>
                   </div>
