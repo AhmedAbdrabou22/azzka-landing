@@ -27,7 +27,7 @@ const modules = [
     },
     {
         id: 3,
-        name: "ادارة السياحة الداخلية",
+        name: "ادارة السياحة  الداخلية الخارجية",
         icon: FaHandshake,
         description: "ادارة متكاملة لعمليات السياحة",
         features: ["اعداد البرامج والرحلات", "ملفات الرحلات", "ادارة شاملة الحجوزات","حجوزات وتسكين الفنادق","حجوزات وتسكين النقل","حجوزات وتسكين الطيران"],
@@ -36,17 +36,17 @@ const modules = [
         borderColor: "border-green-500/20",
         hoverColor: "hover:border-green-500/40"
     },
-    {
-        id: 4,
-        name: "ادارة السياحة الخارجية",
-        icon: FaUsers,
-        description: "ادارة متكاملة لعمليات السياحة",
-        features: ["اعداد البرامج والرحلات", "ملفات الرحلات", "ادارة شاملة الحجوزات","حجوزات وتسكين الفنادق","حجوزات وتسكين النقل","حجوزات وتسكين الطيران"],
-        color: "from-purple-500 to-pink-500",
-        bgColor: "bg-purple-500/10",
-        borderColor: "border-purple-500/20",
-        hoverColor: "hover:border-purple-500/40"
-    },
+    // {
+    //     id: 4,
+    //     name: "ادارة السياحة الخارجية",
+    //     icon: FaUsers,
+    //     description: "ادارة متكاملة لعمليات السياحة",
+    //     features: ["اعداد البرامج والرحلات", "ملفات الرحلات", "ادارة شاملة الحجوزات","حجوزات وتسكين الفنادق","حجوزات وتسكين النقل","حجوزات وتسكين الطيران"],
+    //     color: "from-purple-500 to-pink-500",
+    //     bgColor: "bg-purple-500/10",
+    //     borderColor: "border-purple-500/20",
+    //     hoverColor: "hover:border-purple-500/40"
+    // },
     
     {
         id: 5,
@@ -112,11 +112,12 @@ export default function ModulesSection() {
             <div className="max-w-7xl mx-auto px-5">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
-                        منصة <span className="text-[#fe6813]">اذكي</span>
-                        <span className="block text-[#fe6813] mt-2">لأنظمة إدارة متكاملة</span>
+                        منظومة <span className="text-[#fe6813]">اذكي</span>
+                        <span className="block text-[#fe6813] mt-2">ادارة وحوكمة متكاملة لجميع الاقسام
+</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        اذكي هو نظام شامل لإدارة جميع جوانب شركتك السياحية بكفاءة عالية، يشمل الحسابات، الموارد البشرية، العمليات السياحية، إدارة العملاء، الأرشيف الإلكتروني، والمخازن.
+                       احصل على رؤية كاملة لكل أقسام شركتك وتحكم في العمليات بدقة وسهولة. من التخطيط إلى التنفيذ، كل القرارات تحت سيطرتك مع ذكاء متقدم.
                     </p>
                 </div>
 

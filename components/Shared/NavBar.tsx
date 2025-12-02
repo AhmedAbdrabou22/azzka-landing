@@ -32,15 +32,15 @@ const NavBar = () => {
                         مميزات أذكى
 
                     </Link>
-                    <Link href="#" className="text-white hover:text-[#fe6813] transition">
+                    <Link href="#vision" className="text-white hover:text-[#fe6813] transition">
                         عن  ماستر فيجن
                     </Link>
-                    <Link href="#" className="text-white hover:text-[#fe6813] transition">
+                    <Link href="#contact"  className="text-white hover:text-[#fe6813] transition">
                         تواصل معنا
                     </Link>
 
                     <Link
-                        href="#"
+                        href="#contact" 
                         className="bg-[#fe6813] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#ff7b33] transition"
                     >
                         ابدأ الآن

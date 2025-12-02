@@ -8,6 +8,10 @@
     50% { transform: translate(30px, -30px) scale(1.1); }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .animate-blob {
     animation: blob 8s infinite ease-in-out;
 }

@@ -57,7 +57,7 @@ export default function Hero() {
                 <span>شاهد الفيديو</span>
               </Link> */}
                <Link
-                href="#"
+                href="#contact"
                 className="group bg-[#fe6813] text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-[#ff7b33] transition-all duration-300 shadow-2xl shadow-[#fe6813]/40 hover:scale-105 flex items-center gap-3"
               >
                 <span>سجل الآن</span>
