@@ -13,11 +13,11 @@ const Footer = () => {
                     {/* معلومات الشركة */}
                     <div className="space-y-4">
                         <Image
-                            src="/logo.png"
+                            src="/whiteLogo.png"
                             alt="Azzka Logo"
                             width={120}
                             height={50}
-                            className="object-contain logo-white"
+                            className="object-contain"
                         />
                         <p className="text-gray-300 text-sm leading-relaxed">
                             نحن نقدم أفضل الحلول التقنية لمساعدتك على تحقيق أهدافك بكفاءة واحترافية.
