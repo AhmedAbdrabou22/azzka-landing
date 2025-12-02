@@ -24,11 +24,11 @@ const NavBar = () => {
 
                 
                 <div className="hidden md:flex gap-8 items-center">
-                    <Link href="#" className="text-white hover:text-[#fe6813] transition">
+                    <Link href="#about" className="text-white hover:text-[#fe6813] transition">
                         عن النظام
 
                     </Link>
-                    <Link href="#" className="text-white hover:text-[#fe6813] transition">
+                    <Link href="#why" className="text-white hover:text-[#fe6813] transition">
                         مميزات أذكى
 
                     </Link>

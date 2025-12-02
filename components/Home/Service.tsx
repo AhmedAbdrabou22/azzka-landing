@@ -63,8 +63,8 @@ const modules = [
         id: 6,
         name: "ادارة الموارد البشرية HRM",
         icon: FaFolder,
-        description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
-        features: ["تخزين آمن", "البحث السريع", "التصنيف الذكي"],
+        description: "نظام متكامل لإدارة الموظفين وعمليات الموارد البشرية بسهولة ودقة، من التوظيف حتى تطوير الأداء ومتابعة الحضور والانصراف.",
+        features: ["إدارة بيانات الموظفين", "الحضور والانصراف والإجازات", "الرواتب والمكافآت","تقييم الأداء والتطوير المهني","تقارير وتحليلات شاملة"],
         color: "from-indigo-500 to-violet-500",
         bgColor: "bg-indigo-500/10",
         borderColor: "border-indigo-500/20",
@@ -74,34 +74,34 @@ const modules = [
         id: 7,
         name: "ادارة المخازن",
         icon: FaFolder,
-        description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
-        features: ["تخزين آمن", "البحث السريع", "التصنيف الذكي"],
-        color: "from-indigo-500 to-violet-500",
-        bgColor: "bg-indigo-500/10",
-        borderColor: "border-indigo-500/20",
-        hoverColor: "hover:border-indigo-500/40"
+        description: `حل متكامل لمتابعة المخزون وتحسين عمليات التخزين والتوريد بدقة وفعالية، مع رؤية كاملة لحركة البضائع في الوقت الحقيقي.`,
+        features: ["متابعة المخزون الحالي", "إدارة عمليات الاستلام والصرف", "تنظيم المخازن","إدارة الطلبات والمشتريات","تنبيهات الحد الأدنى وإعادة الطلب","تقارير وتحليلات المخزون"],
+         color: "from-teal-500 to-blue-500",
+        bgColor: "bg-teal-500/10",
+        borderColor: "border-teal-500/20",
+        hoverColor: "hover:border-teal-500/40"
     },
     {
         id: 8,
         name: "ادارة المهام",
         icon: FaFolder,
-        description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
-        features: ["تخزين آمن", "البحث السريع", "التصنيف الذكي"],
-        color: "from-indigo-500 to-violet-500",
-        bgColor: "bg-indigo-500/10",
-        borderColor: "border-indigo-500/20",
-        hoverColor: "hover:border-indigo-500/40"
+        description: `ادارة متكاملة لتنظيم ومتابعة جميع المهام ، مع أدوات ذكية لضمان تنفيذ العمل بكفاءة وفي الوقت المحدد.`,
+        features: ["إنشاء المهام وتوزيعها على الفرق", "متابعة تقدم المشاريع والمهام", "تحديد أولويات وجدولة زمنية","التنبيهات والإشعارات التلقائية","تقارير الأداء والمتابعة","تكامل مع باقي أقسام النظام"],
+         color: "from-rose-500 to-red-500",
+        bgColor: "bg-rose-500/10",
+        borderColor: "border-rose-500/20",
+        hoverColor: "hover:border-rose-500/40"
     },
     {
         id: 9,
         name: "الأرشيف الإلكتروني",
         icon: FaFolder,
-        description: "حفظ وإدارة المستندات والملفات بشكل آمن ومنظم",
-        features: ["تخزين آمن", "البحث السريع", "التصنيف الذكي"],
-        color: "from-indigo-500 to-violet-500",
-        bgColor: "bg-indigo-500/10",
-        borderColor: "border-indigo-500/20",
-        hoverColor: "hover:border-indigo-500/40"
+        description: "نظام متكامل لتخزين وتنظيم جميع المستندات والملفات إلكترونيًا، مع وصول سريع وآمن لجميع البيانات في أي وقت ومن أي مكان.",
+        features: ["تخزين الملفات والمستندات", "تنظيم المستندات حسب الفئات والتصنيفات", "البحث السريع والمتقدم عن الملفات","إدارة الصلاحيات والوصول للملفات","النسخ الاحتياطي وحماية البيانات","تقارير وتحليلات الاستخدام"],
+        color: "from-blue-700 to-purple-700",
+        bgColor: "bg-blue-700/10",
+        borderColor: "border-blue-700/20",
+        hoverColor: "hover:border-blue-700/40"
     },
 
 ];
