@@ -38,31 +38,31 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="#about"
                   className="block text-gray-300 hover:text-[#fe6813]"
                 >
-                  الرئيسية
+                   عن النظام
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#why"
                   className="block  text-gray-300 hover:text-[#fe6813]"
                 >
-                  الميزات
+                   مميزات أذكى
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#vision"
                   className="block  text-gray-300 hover:text-[#fe6813]"
                 >
-                  الأسعار
+                   عن  ماستر فيجن
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#contact"
                   className="block text-gray-300  hover:text-[#fe6813]"
                 >
                   تواصل معنا
