@@ -1,30 +1,41 @@
-import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import React from "react";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPaperPlane,
+} from "react-icons/fa";
 
 const contactInfo = [
   {
     icon: FaPhone,
     title: "اتصل بنا",
-    detail: "201007020762+ , 966583281913+",
-    color: "from-blue-500 to-cyan-500"
+    detail: "201007020762+",
+    ant:"966583281913+",
+    color: "from-blue-500 to-cyan-500",
   },
   {
     icon: FaEnvelope,
     title: "البريد الإلكتروني",
     detail: "info@azzka.net",
-    color: "from-purple-500 to-pink-500"
+    ant:'',
+    color: "from-purple-500 to-pink-500",
   },
   {
     icon: FaMapMarkerAlt,
     title: "العنوان",
     detail: "مصر , القاهرة , مصر الجديدة  , عمارات العبور 19أ",
-    color: "from-orange-500 to-red-500"
-  }
+    ant:'',
+    color: "from-orange-500 to-red-500",
+  },
 ];
 
 const ContactUs = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden" dir="rtl">
+    <section
+      className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
+      dir="rtl"
+    >
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-96 h-96 bg-[#fe6813]/10 rounded-full filter blur-3xl"></div>
@@ -36,11 +47,14 @@ const ContactUs = () => {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
             تواصل معنا
-            <span className="block text-[#fe6813] mt-2">كن أول من يمتلك المستقبل</span>
+            <span className="block text-[#fe6813] mt-2">
+              كن أول من يمتلك المستقبل
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-انضم لنخبة العملاء الذين يثقون في حلول ماستر فيجن منذ 2007
- سجل واطلب عرضاً توضيحياً لمنظومة <strong>"أذكى"</strong> الآن          </p>
+            انضم لنخبة العملاء الذين يثقون في حلول ماستر فيجن منذ 2007 سجل واطلب
+            عرضاً توضيحياً لمنظومة <strong>"أذكى"</strong> الآن{" "}
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -49,8 +63,11 @@ const ContactUs = () => {
             <form className="space-y-6">
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-gray-900 font-bold mb-2 text-lg">
-                  الاسم الكامل
+                <label
+                  htmlFor="name"
+                  className="block text-gray-900 font-bold mb-2 text-lg"
+                >
+                  الاسم الكامل <span style={{ color: "red" }}>*</span>
                 </label>
                 <input
                   type="text"
@@ -62,8 +79,27 @@ const ContactUs = () => {
                 />
               </div>
               <div>
-                <label htmlFor="name" className="block text-gray-900 font-bold mb-2 text-lg">
-                  اسم الشركة
+                <label
+                  htmlFor="phone"
+                  className="block text-gray-900 font-bold mb-2 text-lg"
+                >
+                  رقم الهاتف<span style={{ color: "red" }}>*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#fe6813] focus:outline-none transition-colors duration-200 text-gray-900"
+                  placeholder="+20 123 456 7890"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-gray-900 font-bold mb-2 text-lg"
+                >
+                  اسم الشركة<span style={{ color: "red" }}>*</span>
                 </label>
                 <input
                   type="text"
@@ -75,7 +111,10 @@ const ContactUs = () => {
                 />
               </div>
               <div>
-                <label htmlFor="name" className="block text-gray-900 font-bold mb-2 text-lg">
+                <label
+                  htmlFor="name"
+                  className="block text-gray-900 font-bold mb-2 text-lg"
+                >
                   الوظيفة
                 </label>
                 <input
@@ -90,7 +129,10 @@ const ContactUs = () => {
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-gray-900 font-bold mb-2 text-lg">
+                <label
+                  htmlFor="email"
+                  className="block text-gray-900 font-bold mb-2 text-lg"
+                >
                   البريد الإلكتروني
                 </label>
                 <input
@@ -104,24 +146,13 @@ const ContactUs = () => {
               </div>
 
               {/* Phone */}
-              <div>
-                <label htmlFor="phone" className="block text-gray-900 font-bold mb-2 text-lg">
-                  رقم الهاتف
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 focus:border-[#fe6813] focus:outline-none transition-colors duration-200 text-gray-900"
-                  placeholder="+20 123 456 7890"
-                  required
-                />
-              </div>
-
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-gray-900 font-bold mb-2 text-lg">
+                <label
+                  htmlFor="message"
+                  className="block text-gray-900 font-bold mb-2 text-lg"
+                >
                   رسالتك
                 </label>
                 <textarea
@@ -150,7 +181,7 @@ const ContactUs = () => {
             {/* Intro Text */}
             <div className="bg-gradient-to-br from-[#500d75] to-[#6b1a99] rounded-3xl p-8 text-white">
               <h3 className="text-3xl font-bold mb-4">
-               اشترك الآن وابدأ مستقبل الإدارة الأذكى
+                اشترك الآن وابدأ مستقبل الإدارة الأذكى
               </h3>
               {/* <p className="text-lg text-gray-100 leading-relaxed">
                 فريقنا المتخصص جاهز لمساعدتك والإجابة على جميع استفساراتك.
@@ -168,26 +199,48 @@ const ContactUs = () => {
                     className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-[#fe6813]/30 transition-all duration-300 hover:scale-105"
                   >
                     <div className="flex items-center gap-4">
-                      <div className={`flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br ${info.color} flex items-center justify-center`}>
+                      <div
+                        className={`flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br ${info.color} flex items-center justify-center`}
+                      >
                         <IconComponent className="text-2xl text-white" />
                       </div>
                       <div className="flex-1">
                         <h4 className="text-lg font-bold text-gray-900 mb-1">
                           {info.title}
                         </h4>
-                       <p className="text-gray-600 text-base">
-  {info.title === "البريد الإلكتروني" ? (
-    <a 
-      href={`mailto:${info.detail}`} 
-      className="text-[#fe6813] hover:underline"
-    >
-      {info.detail}
-    </a>
-  ) : (
-    <span>{info.detail}</span>
-  )}
-</p>
-
+                        <p className="text-gray-600 text-base">
+                          {info.title === "البريد الإلكتروني" ? (
+                            <a
+                              href={`mailto:${info.detail}`}
+                              className="text-[#fe6813] hover:underline"
+                            >
+                              {info.detail}
+                            </a>
+                          ) : info.title === "اتصل بنا" ? (
+                            <>
+                              <a
+                              href={`tel:${info.detail
+                                .split(",")[0]
+                                .trim()
+                                .replace("+", "")}`}
+                              className="text-[#fe6813] hover:underline"
+                            >
+                              {info.detail}
+                            </a>
+                            <a
+                              href={`tel:${info.ant
+                                .split(",")[0]
+                                .trim()
+                                .replace("+", "")}`}
+                              className="text-[#fe6813] hover:underline"
+                            >
+                              {info.ant}
+                            </a>
+                            </>
+                          ) : (
+                            <span>{info.detail}</span>
+                          )}
+                        </p>
                       </div>
                     </div>
                   </div>

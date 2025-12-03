@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { FaMoneyBillWave, FaUsers, FaPlane, FaHandshake, FaFolder, FaWarehouse, FaArrowLeft, FaChartLine, FaUserTie, FaFileInvoiceDollar } from "react-icons/fa";
+import { FaFileArchive } from "react-icons/fa";
+import { FaTasks } from "react-icons/fa";
+
 
 const modules = [
     {
@@ -62,7 +65,7 @@ const modules = [
     {
         id: 6,
         name: "ادارة الموارد البشرية HRM",
-        icon: FaFolder,
+        icon: FaUserTie,
         description: "نظام متكامل لإدارة الموظفين وعمليات الموارد البشرية بسهولة ودقة، من التوظيف حتى تطوير الأداء ومتابعة الحضور والانصراف.",
         features: ["إدارة بيانات الموظفين", "الحضور والانصراف والإجازات", "الرواتب والمكافآت","تقييم الأداء والتطوير المهني","تقارير وتحليلات شاملة"],
         color: "from-indigo-500 to-violet-500",
@@ -73,7 +76,7 @@ const modules = [
     {
         id: 7,
         name: "ادارة المخازن",
-        icon: FaFolder,
+        icon: FaWarehouse,
         description: `حل متكامل لمتابعة المخزون وتحسين عمليات التخزين والتوريد بدقة وفعالية، مع رؤية كاملة لحركة البضائع في الوقت الحقيقي.`,
         features: ["متابعة المخزون الحالي", "إدارة عمليات الاستلام والصرف", "تنظيم المخازن","إدارة الطلبات والمشتريات","تنبيهات الحد الأدنى وإعادة الطلب","تقارير وتحليلات المخزون"],
          color: "from-teal-500 to-blue-500",
@@ -84,7 +87,7 @@ const modules = [
     {
         id: 8,
         name: "ادارة المهام",
-        icon: FaFolder,
+        icon: FaTasks,
         description: `ادارة متكاملة لتنظيم ومتابعة جميع المهام ، مع أدوات ذكية لضمان تنفيذ العمل بكفاءة وفي الوقت المحدد.`,
         features: ["إنشاء المهام وتوزيعها على الفرق", "متابعة تقدم المشاريع والمهام", "تحديد أولويات وجدولة زمنية","التنبيهات والإشعارات التلقائية","تقارير الأداء والمتابعة","تكامل مع باقي أقسام النظام"],
          color: "from-rose-500 to-red-500",
@@ -95,7 +98,7 @@ const modules = [
     {
         id: 9,
         name: "الأرشيف الإلكتروني",
-        icon: FaFolder,
+        icon: FaFileArchive,
         description: "نظام متكامل لتخزين وتنظيم جميع المستندات والملفات إلكترونيًا، مع وصول سريع وآمن لجميع البيانات في أي وقت ومن أي مكان.",
         features: ["تخزين الملفات والمستندات", "تنظيم المستندات حسب الفئات والتصنيفات", "البحث السريع والمتقدم عن الملفات","إدارة الصلاحيات والوصول للملفات","النسخ الاحتياطي وحماية البيانات","تقارير وتحليلات الاستخدام"],
         color: "from-blue-700 to-purple-700",
@@ -174,7 +177,7 @@ export default function ModulesSection() {
                 </div>
 
                 {/* CTA Section */}
-                <div className="mt-16 text-center">
+                {/* <div className="mt-16 text-center">
                     <Link 
                         href="#" 
                         className="inline-flex items-center gap-3 bg-gradient-to-r from-[#500d75] to-[#6b1a99] text-white px-10 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
@@ -182,7 +185,7 @@ export default function ModulesSection() {
                         <span>جرب النظام مجاناً</span>
                         <FaArrowLeft />
                     </Link>
-                </div>
+                </div> */}
             </div>
         </section>
     );
