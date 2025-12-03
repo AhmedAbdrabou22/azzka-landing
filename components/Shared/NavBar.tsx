@@ -33,7 +33,7 @@ const NavBar = () => {
 
                     </Link>
                     <Link href="#vision" className="text-white hover:text-[#fe6813] transition">
-                        عن  ماستر فيجن
+                        عن  ماستر ﭬﻴﭽﻦ 
                     </Link>
                     <Link href="#contact"  className="text-white hover:text-[#fe6813] transition">
                         تواصل معنا
@@ -65,7 +65,7 @@ const NavBar = () => {
                         مميزات أذكى
                     </Link>
                     <Link href="#vision" className="block text-white text-lg hover:text-[#fe6813]">
-                         عن  ماستر فيجن
+                         عن  ماستر ﭬﻴﭽﻦ 
                     </Link>
                     <Link href="#contact" className="block text-white text-lg hover:text-[#fe6813]">
                         تواصل معنا
