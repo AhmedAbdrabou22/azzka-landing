@@ -36,7 +36,7 @@ const ContactUs = () => {
   const [formData, setFormData] = useState({
     tenant_name: "Master Vision",
     name: "",
-    phone: "",
+    mobile: "",
     company: "",
     job: "",
     email: "",
@@ -77,7 +77,7 @@ const ContactUs = () => {
           tenant_name: "Master Vision",
           contact_source_id: 1,
           name: "",
-          phone: "",
+          mobile: "",
           company: "",
           job: "",
           email: "",
