@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaPhone } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { MdLocationPin } from "react-icons/md";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -36,7 +39,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-300 hover:text-[#fe6813] transition"
+                  className="block text-gray-300 hover:text-[#fe6813]"
                 >
                   الرئيسية
                 </Link>
@@ -44,7 +47,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-300 hover:text-[#fe6813] transition"
+                  className="block  text-gray-300 hover:text-[#fe6813]"
                 >
                   الميزات
                 </Link>
@@ -52,7 +55,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-300 hover:text-[#fe6813] transition"
+                  className="block  text-gray-300 hover:text-[#fe6813]"
                 >
                   الأسعار
                 </Link>
@@ -60,9 +63,9 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-300 hover:text-[#fe6813] transition"
+                  className="block text-gray-300  hover:text-[#fe6813]"
                 >
-                  من نحن
+                  تواصل معنا
                 </Link>
               </li>
             </ul>
@@ -114,7 +117,9 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-gray-300">
-                <span>📧</span>
+                <span>
+                  <MdOutlineMailOutline style={{ color: "white" }} />
+                </span>
                 <a
                   href="mailto:info@azzka.net"
                   className="hover:text-[#fe6813] transition"
@@ -123,16 +128,27 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-center gap-2 text-gray-300">
-                <span>📞</span>
+                <span>
+                  <FaPhone style={{ color: "white" }} />
+                </span>
                 <a
-                  href="tel:+201234567890"
+                  href="tel:+201007020762"
                   className="hover:text-[#fe6813] transition"
                 >
-                  201007020762+ , 966583281913+
+                  201007020762+
+                </a>
+                ,
+                <a
+                  href="tel:+966583281913"
+                  className="hover:text-[#fe6813] transition"
+                >
+                  966583281913+
                 </a>
               </li>
               <li className="flex items-center gap-2 text-gray-300">
-                <span>📍</span>
+                <span>
+                  <MdLocationPin style={{ color: "white" }} />
+                </span>
                 <span>19 أ عمارات العبور، صلاح سالم، القاهرة، مصر </span>
               </li>
             </ul>
