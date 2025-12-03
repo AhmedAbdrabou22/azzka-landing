@@ -43,12 +43,13 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
-             نظام "أذكى".. الاسم الذي يُلخص الأداء. عندما تجتمع الخبرة مع الابتكار، ينتج نظام أذكى الجيل القادم من الحلول الرقمية المتكاملة أحدث إبداعات شركة ماستر فيجن للحلول المتكاملة. نضع بين أيديكم خلاصة ريادتنا التقنية منذ عام 2007.
+              نظام "أذكى".. الاسم الذي يُلخص الأداء. عندما تجتمع الخبرة مع
+              الابتكار، ينتج نظام أذكى الجيل القادم من الحلول الرقمية المتكاملة
+              أحدث إبداعات شركة ماستر فيجن للحلول المتكاملة. نضع بين أيديكم
+              خلاصة ريادتنا التقنية منذ عام 2007.
             </p>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-5 pt-6">
-             
-
               {/* <Link
                 href="#"
                 className="group bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-2xl font-bold text-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 flex items-center gap-3"
@@ -56,7 +57,7 @@ export default function Hero() {
                 <FaPlay className="text-sm" />
                 <span>شاهد الفيديو</span>
               </Link> */}
-               <Link
+              <Link
                 href="#contact"
                 className="group bg-[#fe6813] text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-[#ff7b33] transition-all duration-300 shadow-2xl shadow-[#fe6813]/40 hover:scale-105 flex items-center gap-3"
               >
@@ -67,7 +68,15 @@ export default function Hero() {
           </div>
 
           {/* Animated SVG - Left Side */}
-          <div className="relative h-[500px] lg:h-[600px] flex items-center justify-center">
+          <div className="relative h-[500px] lg:h-[600px] flex items-center justify-center relative">
+            {/* <div>
+              <h1 className="text-3xl text-white absolute top-[22%] left-[41%]">منذ 2007</h1>
+            </div> */}
+            <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl text-white font-bold text-center">
+                منذ 2007
+              </h1>
+            </div>
             <svg
               viewBox="0 0 800 800"
               className="w-full h-full"
