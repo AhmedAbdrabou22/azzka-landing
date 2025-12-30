@@ -115,7 +115,7 @@ export default function ModulesSection() {
             <div className="max-w-7xl mx-auto px-5">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
-                        منظومة <span className="text-[#fe6813]">اذكي</span>
+                        منظومة <span className="text-[#fe6813]">أذكى</span>
                         <span className="block text-[#fe6813] mt-2">ادارة وحوكمة متكاملة لجميع الاقسام
 </span>
                     </h2>

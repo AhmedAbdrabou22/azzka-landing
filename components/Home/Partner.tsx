@@ -12,7 +12,7 @@ export default function AboutMasterVision() {
                     {/* Logo */}
                     <div className="flex justify-center">
                         <Image 
-                            src="/favicon.png"
+                            src="/favicon2.png"
                             alt="Master Vision Logo"
                             width={90}
                             height={90}
@@ -28,10 +28,10 @@ export default function AboutMasterVision() {
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                         ماضي من الريادة..
                         <span className="text-[#fe6813]"> ومستقبل هو الأذكى</span>
-                    </h1>
+                    </h2> 
 
                     {/* Content Paragraph */}
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://azzka.net/sitemap.xml
+Host: azzka.net

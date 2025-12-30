@@ -73,9 +73,9 @@ export default function Hero() {
               <h1 className="text-3xl text-white absolute top-[22%] left-[41%]">منذ 2007</h1>
             </div> */}
             <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl text-white font-bold text-center">
+              <h2 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl text-white font-bold text-center">
                 منذ 2007
-              </h1>
+              </h2>
             </div>
             <svg
               viewBox="0 0 800 800"

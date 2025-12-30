@@ -74,13 +74,18 @@ export const metadata: Metadata = {
     template: "%s | Azzka",
   },
   icons: {
-    icon: "/coloredlogo.svg",
-    shortcut: "/coloredlogo.svg",
-    apple: "/coloredlogo.svg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+    other: [
+      { rel: "icon", url: "/favicon.png" },
+      { rel: "apple-touch-icon", url: "/favicon.png" }
+    ],
   },
+  themeColor: "#fe6813",
 
   description:
-    "أذكى هو نظام احترافي لإدارة شركات السياحة يشمل الحسابات، الموارد البشرية، CRM، إدارة العمليات السياحية، الأرشيف الإلكتروني والمخازن — كل ذلك في نظام واحد شامل.",
+    "أذكى هو نظام احترافي لإدارة شركات السياحة يشمل الحسابات، الموارد البشرية، CRM، إدارة العمليات السياحية، الأرشيف الإلكتروني والمخازن — كل ذلك في نظام واحد شامل.", 
   
   keywords: [
     "نظام شركات السياحة",
@@ -133,6 +138,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#fe6813" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body
         className={`${cairo.className} antialiased`}
         suppressHydrationWarning
