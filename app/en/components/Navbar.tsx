@@ -7,11 +7,11 @@ const NavBar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="w-full fixed top-0 left-0 z-50 bg-[#500d75] shadow-lg" dir="rtl">
+        <nav className="w-full fixed top-0 left-0 z-50 bg-[#500d75] shadow-lg" dir="ltr">
             <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
 
-                
-                <Link href="/ar">
+                {/* Logo */}
+                <Link href="/en">
                     <Image
                         src="/whiteLogo.png"
                         alt="Azzka Logo"
@@ -21,37 +21,35 @@ const NavBar = () => {
                     />
                 </Link>
 
-
-                
+                {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 items-center">
                     <Link href="#about" className="text-white hover:text-[#fe6813] transition">
-                        عن النظام
-
+                        About System
                     </Link>
                     <Link href="#why" className="text-white hover:text-[#fe6813] transition">
-                        مميزات أذكى
-
+                        Azzka Features
                     </Link>
                     <Link href="#vision" className="text-white hover:text-[#fe6813] transition">
-                        عن  ماستر ﭬﻴﭽﻦ 
+                        About Master Vision
                     </Link>
-                    <Link href="#contact"  className="text-white hover:text-[#fe6813] transition">
-                        تواصل معنا
+                    <Link href="#contact" className="text-white hover:text-[#fe6813] transition">
+                        Contact Us
                     </Link>
 
                     <Link
                         href="#contact" 
                         className="bg-[#fe6813] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#ff7b33] transition"
                     >
-                        ابدأ الآن
+                        Get Started
                     </Link>
-                     <Link href="/en">
+                     <Link href="/ar">
             <span className="block text-center text-white text-lg hover:text-[#fe6813] transition font-semibold">
-              EN
+              ع
             </span>
           </Link>
                 </div>
 
+                {/* Mobile Menu Button */}
                 <button
                     className="md:hidden text-white text-3xl"
                     onClick={() => setOpen(!open)}
@@ -60,31 +58,31 @@ const NavBar = () => {
                 </button>
             </div>
 
-            {/* قائمة الموبايل */}
+            {/* Mobile Menu */}
             {open && (
                 <div className="md:hidden bg-[#500d75] px-5 pb-5 space-y-4">
                     <Link href="#about" className="block text-white text-lg hover:text-[#fe6813]">
-                         عن النظام
+                        About System
                     </Link>
                     <Link href="#why" className="block text-white text-lg hover:text-[#fe6813]">
-                        مميزات أذكى
+                        Azzka Features
                     </Link>
                     <Link href="#vision" className="block text-white text-lg hover:text-[#fe6813]">
-                         عن  ماستر ﭬﻴﭽﻦ 
+                        About Master Vision
                     </Link>
                     <Link href="#contact" className="block text-white text-lg hover:text-[#fe6813]">
-                        تواصل معنا
+                        Contact Us
                     </Link>
 
                     <Link
                         href="#contact"
                         className="block bg-[#fe6813] text-white text-center px-5 py-2 rounded-lg font-semibold hover:bg-[#ff7b33] transition"
                     >
-                        ابدأ الآن
+                        Get Started
                     </Link>
-                     <Link href="/en">
+                     <Link href="/ar">
             <span className="block text-center text-white text-lg hover:text-[#fe6813] transition font-semibold">
-              EN
+              ع
             </span>
           </Link>
                 </div>
