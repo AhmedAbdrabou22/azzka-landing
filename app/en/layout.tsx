@@ -4,8 +4,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Cairo } from "next/font/google";
 import "../globals.css";
 // import NavBar from "@/components/Shared/NavBar";
-import Footer from "@/components/Shared/Footer";
 import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const cairo = Cairo({
@@ -131,7 +131,7 @@ export default function RootLayout({
 
         <main>{children}</main>
 
-        <Footer />
+        <Footer/>
       </body>
     </html>
   );
