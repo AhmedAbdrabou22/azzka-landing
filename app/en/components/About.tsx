@@ -16,6 +16,8 @@ const highlights = [
   "Flexibility & Scalability",
 ];
 
+
+
 const About = () => {
   return (
     <section

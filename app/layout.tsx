@@ -1,51 +1,5 @@
-// import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
-// import NavBar from "../components/Shared/NavBar";
-// import { Cairo } from "next/font/google";
-// import Footer from "../components/Shared/Footer";
-// const cairo = Cairo({
-//   subsets: ["arabic", "latin"],
-//   weight: ["400", "500", "600", "700"], 
-//   variable: "--font-cairo",
-// });
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// export const metadata: Metadata = {
-//   title: "Azzka-اذكي   الشركات السياحية",
-//   description : "اذكي هو نظام احترافي متكامل لإدارة شركات السياحة، مصمم لتوفير تجربة سلسة وفعالة في تنظيم جميع العمليات التشغيلية. يشمل النظام وحدات الحسابات، الموارد البشرية، العمليات السياحية، إدارة العملاء، الأرشيف الإلكتروني، والمخازن، ليمنحك السيطرة الكاملة على أعمالك وتسهيل كل العمليات اليومية.",
-// };
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body className={`${cairo.className} antialiased`}>
-//         <NavBar/>
-
-//         <main className="">
-//           {children}
-//         </main>
-//         <Footer/>
-//       </body>
-//     </html>
-//   );
-// }
-
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import { Cairo } from "next/font/google";
 import "./globals.css";
 
@@ -58,15 +12,15 @@ const cairo = Cairo({
   variable: "--font-cairo",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: {
@@ -79,25 +33,82 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
     other: [
       { rel: "icon", url: "/favicon.png" },
-      { rel: "apple-touch-icon", url: "/favicon.png" }
+      { rel: "apple-touch-icon", url: "/favicon.png" },
     ],
   },
   themeColor: "#fe6813",
 
   description:
-    "أذكى هو نظام احترافي لإدارة شركات السياحة يشمل الحسابات، الموارد البشرية، CRM، إدارة العمليات السياحية، الأرشيف الإلكتروني والمخازن — كل ذلك في نظام واحد شامل.", 
-  
+    "أذكى هو نظام احترافي لإدارة شركات السياحة يشمل الحسابات، الموارد البشرية، CRM، إدارة العمليات السياحية، الأرشيف الإلكتروني والمخازن — كل ذلك في نظام واحد شامل.",
+
   keywords: [
     "نظام شركات السياحة",
+    "برنامج شركات السياحة",
     "برنامج إدارة السياحة",
-    "سياحة",
-    "ERP",
-    "CRM",
-    "HRM",
-    "نظام حسابات",
+    "نظام إدارة شركات السياحة",
+    "أفضل برنامج لشركات السياحة",
+    "برنامج سياحي متكامل",
+    "سيستم شركات السياحة",
+    "سوفت وير شركات السياحة",
+    "نظام ERP",
+    "نظام ERP سياحي",
+    "ERP شركات السياحة",
+    "Tourism ERP",
+    "Tourism ERP System",
+    "Travel ERP System",
+    "Travel Agency ERP",
+    "ERP System for Tourism",
+    "برنامج حسابات شركات السياحة",
+    "نظام حسابات سياحي",
+    "برنامج محاسبة سياحي",
+    "إدارة الحسابات المالية",
+    "Financial Management System",
+    "Accounting System for Tourism",
+    "إدارة الموارد البشرية",
+    "برنامج HR",
+    "HRM System",
+    "نظام شؤون الموظفين",
+    "إدارة الموظفين",
+    "Payroll System",
+    "CRM شركات السياحة",
+    "برنامج CRM سياحي",
+    "إدارة علاقات العملاء",
+    "Customer Relationship Management",
+    "Tourism CRM",
+    "نظام إدارة الحج والعمرة",
+    "برنامج شركات الحج والعمرة",
+    "إدارة حملات الحج",
+    "إدارة حملات العمرة",
+    "Hajj and Umrah Management System",
+    "نظام إدارة الحجوزات",
+    "برنامج حجز رحلات",
+    "إدارة الرحلات السياحية",
+    "Tour Booking System",
+    "Travel Booking Management",
+    "Tour Operations System",
+    "إدارة المخازن",
+    "برنامج مخازن",
+    "Inventory Management System",
+    "Stock Management",
+    "الأرشيف الإلكتروني",
+    "إدارة المستندات",
+    "نظام أرشفة إلكترونية",
+    "Document Management System",
+    "Archive Management System",
+    "نظام سحابي",
+    "Cloud ERP",
+    "SaaS ERP System",
+    "Online ERP System",
+    "Web Based ERP",
+    "برنامج شركات السياحة في مصر",
+    "نظام سياحي في السعودية",
+    "برنامج سياحي في الوطن العربي",
+    "Tourism Software Middle East",
     "Azzka",
+    "Azzka ERP",
+    "Azzka System",
+    "Azzka Tourism ERP",
   ],
-
   metadataBase: new URL("https://azzka.net"),
 
   alternates: {
@@ -107,7 +118,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Azzka - أذكى نظام لإدارة شركات السياحة",
     description:
-      "نظام كامل لإدارة الحسابات، الموارد البشرية، CRM، العمليات السياحية، الأرشيف والمخازن.",
+  "Azzka هو نظام ERP احترافي لإدارة شركات السياحة والمؤسسات الخدمية، يوفّر حلولًا متكاملة لإدارة الحسابات المالية، الموارد البشرية، علاقات العملاء (CRM)، الحجوزات، العمليات السياحية، المخازن، والأرشيف الإلكتروني. يساعد النظام على تنظيم البيانات، تحسين كفاءة العمل، تقليل الأخطاء، وتقديم تقارير ذكية لدعم اتخاذ القرار من خلال منصة واحدة آمنة وقابلة للتوسع.",
     url: "https://azzka.net",
     type: "website",
     locale: "ar_EG",
@@ -149,7 +160,6 @@ export default function RootLayout({
         className={`${cairo.className} antialiased`}
         suppressHydrationWarning
       >
-         
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -158,14 +168,31 @@ export default function RootLayout({
               "@type": "SoftwareApplication",
               name: "Azzka Tourism ERP",
               url: "https://azzka.net",
+              logo: "https://azzka.net/whiteLogo.png",
               applicationCategory: "BusinessApplication",
               operatingSystem: "Web",
               description:
-                "نظام احترافي لإدارة الحسابات، الموارد البشرية، المخازن، CRM، والعمليات السياحية.",
+                "نظام ERP متكامل لإدارة شركات السياحة يشمل الحسابات، الموارد البشرية، CRM، الحجوزات، العمليات السياحية، المخازن، والأرشيف الإلكتروني.",
+              featureList: [
+                "إدارة الحسابات المالية",
+                "إدارة الموارد البشرية والموظفين",
+                "إدارة علاقات العملاء (CRM)",
+                "إدارة الحجوزات والعمليات السياحية",
+                "الأرشيف الإلكتروني وإدارة المستندات",
+                "إدارة المخازن والموردين",
+                "تقارير وتحليلات ذكية",
+                "دعم الذكاء الاصطناعي",
+              ],
               offers: {
                 "@type": "Offer",
                 price: "0",
                 priceCurrency: "EGP",
+                availability: "https://schema.org/OnlineOnly",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Azzka",
+                url: "https://azzka.net",
               },
             }),
           }}
