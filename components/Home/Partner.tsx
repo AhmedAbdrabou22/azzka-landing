@@ -29,7 +29,7 @@ export default function AboutMasterVision() {
 
                     {/* Title */}
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                        ماضي من الريادة..
+                        ماضٍ من الريادة..
                         <span className="text-[#fe6813]"> ومستقبل هو الأذكى</span>
                     </h2> 
 
